@@ -1076,7 +1076,7 @@ header.scrolled {
 .our-menu .item-wrapper .item-left,
 .lunch-time .item-wrapper .item-left,
 .chef-choise .item-wrapper .item-left {
-  width: 85%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1110,7 +1110,7 @@ header.scrolled {
   width: 1000px;
   border-bottom: 1px dotted #616f7d;
   bottom: 6px;
-  left: 102%;
+/*  left: 100%;*/
 }
 
 .our-menu .item-wrapper .item-right .item-price,
@@ -2497,3 +2497,74 @@ footer p {
   100% { opacity: 0; }
 }
 
+.project-slider-wrapper {
+  margin-top: 20px;
+}
+
+.project-slider .project-slide {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-slider .project-slide.slick-current {
+  transform: scale(1.05);
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid var(--border-color);
+  transition: 0.3s ease;
+}
+
+.project-slide:hover .project-img {
+  border-color: var(--primary-color);
+}
+
+.project-slide h5 {
+  font-family: "Pacifico", cursive;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.project-slide p {
+  font-size: 14px;
+  color: #666;
+}
+
+.project-slide {
+  display: none;
+  text-align: center;
+  transition: opacity 0.8s ease;
+}
+
+.project-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.project-img {
+/*  width: 100%;*/
+  max-width: 500px;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.project-rotator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center horizontally */
+  justify-content: center;   /* center vertically if needed */
+  text-align: center;
+}
+
+.project-slide img.project-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
