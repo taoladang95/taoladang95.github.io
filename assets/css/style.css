@@ -1710,8 +1710,8 @@ footer p {
 
 .reservation-box {
   margin-top: -130px;
-  background-image: url("./../images/ft-res-bg.jpg");
-  padding: 25px;
+/*  background-image: url("./../images/ft-res-bg.jpg");*/
+  padding: 1px;
 }
 
 .reservation-box .reservation-wrapper {
@@ -1753,7 +1753,7 @@ footer p {
 /* Contact Us Page Start */
 
 .page-banner {
-  background-image: url("./../images/pagetitle-contact.jpg");
+  background-image: url("./../images/contact-bgd.jpg");
   position: relative;
   /* background-position: center center; */
   background-repeat: no-repeat;
@@ -2441,6 +2441,12 @@ footer p {
 .icon-img {
   width: 50px;
   height: 50px;
+  object-fit: contain;
+}
+
+.icon-img-small {
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
